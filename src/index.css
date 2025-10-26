@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom theme tweaks to resemble the dark neumorphic design */
+body {
+  @apply bg-bg text-gray-200 min-h-screen;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Card style used for widgets */
+.widget {
+  background: #2b3438; /* card */
+  border-radius: 14px;
+  box-shadow: -8px -8px 18px rgba(255,255,255,0.02), 10px 10px 30px rgba(0,0,0,0.65);
+}
+
+/* Neumorphic button */
+.neu-btn {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.15));
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.6), -4px -4px 10px rgba(255,255,255,0.02);
+  border-radius: 999px;
+}
+
+/* Small scrollbar for gallery */
+.thumb-scroll {
+  scrollbar-width: thin;
+}
